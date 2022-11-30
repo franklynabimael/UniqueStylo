@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Stylo App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="/Js/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="/css/sweetalert2.min.css">
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          border: 1px solid #ddd;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 16px;
+        }
+        </style>
+</head>
+
+
+<body>
+    <div class="contenedor-app">
+        <div class="imagen"><img src="/img/logodesvanecer.png" alt=""></div>
+        <div class="app">
+            <h1 class="nombre-pagina">Crear Nueva Cita</h1>
+            <p class="descripcion-pagina">Elige tus servicios y coloca tus datos</p>
+
+            <div id="app">
+                <nav class="tabs">
+                    <button type="button" data-paso="1" onclick="location.href='/cita/cita.html'">Servicios</button>
+
+
+                    <button type="button" data-paso="2" onclick="location.href='/cita/informacioncita.html'">Información
+                        Cita</button>
+
+
+                    <button class="actual" type="button" data-paso="3"
+                        onclick="location.href='/cita/resumen.html'">Resumen</button>
+                </nav>
+
+                <div id="paso-3" class="contenido-resumen">
+                    <h2>Resumen</h2>
+                    <p class="text-center">Verifica que la información sea correcta</p>
+
+                    <table>
+                        <tr>
+                            <th>Servicios</th>
+                            <th>Fecha</th>
+                            <th>Precio</th>
+                        </tr>
+                        <tr>
+                            <td>Corte de Hombre</td>
+                            <td>01/12/2022</td>
+                            <td>350$</td>
+                        </tr>
+                        <tr>
+                            <td>Barba</td>
+                            <td>10/12/2022</td>
+                            <td>250$</td>
+                        </tr>
+                        <tr>
+                            <td>Limpieza Facial</td>
+                            <td>23/12/2022</td>
+                            <td>150$</td>
+                        </tr>
+                    </table>
+
+
+
+
+                </div>
+
+                <div class="paginacion">
+                    <button id="anterior" class="boton"
+                        onclick="location.href='/cita/informacioncita.html'">Anterior</button>
+
+
+                    <button id="siguiente" class="boton" onclick="Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Cita Reservada Correctamente',
+                        showConfirmButton: false,
+                        timer: 1800
+                      })">Guardar
+                    </button>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

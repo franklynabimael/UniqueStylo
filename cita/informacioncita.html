@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Stylo App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+
+
+<body>
+    <div class="contenedor-app">
+        <div class="imagen"><img src="/img/logodesvanecer.png" alt=""></div>
+        <div class="app">
+            <h1 class="nombre-pagina">Crear Nueva Cita</h1>
+            <p class="descripcion-pagina">Elige tus servicios y coloca tus datos</p>
+
+            <div id="app">
+                <nav class="tabs">
+
+                    <button type="button" data-paso="1" onclick="location.href='/cita/cita.html'">Servicios</button>
+
+
+                    <button class="actual" type="button" data-paso="2"
+                        onclick="location.href='/cita/informacioncita.html'">Información Cita</button>
+
+
+                    <button type="button" data-paso="3" onclick="location.href='/cita/resumen.html'">Resumen</button>
+
+                </nav>
+
+                <div id="paso-2">
+                    <h2>Tus Datos y Cita</h2>
+                    <p class="text-center">Coloca tus datos y fecha de tu cita</p>
+
+                    <form class="formulario">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" type="text" placeholder="Tu Nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="fecha">Fecha</label>
+                            <input id="fecha" type="date" min="">
+                        </div>
+
+                        <div class="campo">
+                            <label for="hora">Hora</label>
+                            <input id="hora" type="time"/>
+                        </div>
+                        <input type="hidden" id="id" value="">
+                    </form>
+                </div>
+
+                <div class="paginacion">
+                    <a href="/cita/cita.html">
+                        <button id="anterior" class="boton">Anterior</button>
+                    </a>
+                    <a href="/cita/resumen.html">
+                        <button id="siguiente" class="boton">Siguiente</button>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

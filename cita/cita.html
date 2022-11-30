@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Stylo App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+
+</head>
+
+
+<body>
+    <div class="contenedor-app">
+        <div class="imagen"><img src="/img/logodesvanecer.png" alt=""></div>
+        <div class="app">
+            <h1 class="nombre-pagina">Crear Nueva Cita</h1>
+            <p class="descripcion-pagina">Elige tus servicios y coloca tus datos</p>
+
+            <div id="app">
+                <nav class="tabs">
+                    <button class="actual" type="button" data-paso="1"
+                        onclick="location.href='/cita/cita.html'">Servicios</button>
+
+
+                    <button type="button" data-paso="2" onclick="location.href='/cita/informacioncita.html'">Información
+                        Cita</button>
+
+
+                    <button type="button" data-paso="3" onclick="location.href='/cita/resumen.html'">Resumen</button>
+                </nav>
+
+                <div id="paso-1" class="seccion">
+                    <h2>Servicios</h2>
+                    <p class="text-center">Elige tus servicios a continuación</p>
+                    <div id="servicios" class="listado-servicios"></div>
+                </div>
+                <div class="carts">
+                    <div class="card">
+                        <img src="/img/mujer.jpg" alt="corte mujer" style="width:100%">
+                        <div class="container">
+                            <h4><b>Corte Para Mujer</b></h4>
+                            <p>500$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/hombre.jpg" alt="corte Hombre" style="width:100%">
+                        <div class="container">
+                            <h4><b>Corte Para Hombre</b></h4>
+                            <p>350$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/Limpieza.jpg" alt="LimpiezaFacial" style="width:100%">
+                        <div class="container">
+                            <h4><b>Limpieza Facial</b></h4>
+                            <p>150$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/tintado.jpg" alt="Tintado" style="width:100%">
+                        <div class="container">
+                            <h4><b>Tintado de Cabello</b></h4>
+                            <p>350$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/barba.jpg" alt="Barba" style="width:100%">
+                        <div class="container">
+                            <h4><b>Barba</b></h4>
+                            <p>250$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/cerquillo.jpg" alt="Cerquillo" style="width:100%">
+                        <div class="container">
+                            <h4><b>Cerquillo</b></h4>
+                            <p>150$</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paginacion">
+
+
+                    <button id="anterior" class="boton" onclick="location.href='/'">Cancelar</button>
+
+                    <button id="siguiente" class="boton"
+                        onclick="location.href='/cita/informacioncita.html'">Siguiente</button>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

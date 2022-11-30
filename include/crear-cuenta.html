@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Stylo App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<div class="contenedor-app">
+    <div class="imagen"><img src="/img/logodesvanecer.png" alt=""></div>
+    <div class="app">
+        <h1 class="nombre-pagina">Crear Cuenta</h1>
+        <p class="descripcion-pagina">Llena el siguiente el formulario para crear una cuenta</p>
+
+        <form class="formulario">
+
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" />
+            </div>
+
+            <div class="campo">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido" />
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono" />
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Tu E-mail" />
+            </div>
+
+            <div class="campo">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Tu Password" />
+            </div>
+            <a href="/include/mensaje-cuenta.html">
+                <input type="button" value="Crear Cuenta" class="boton">
+            </a>
+
+        </form>
+        <div class="acciones">
+            <a href="/index.html">¿Ya tienes una cuenta? Inicia Sesión</a>
+            <a href="/include/olvide.html">¿Olvidaste tu password?</a>
+        </div>
+    </div>
+
+</html>
